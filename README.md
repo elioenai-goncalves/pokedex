@@ -7,7 +7,7 @@ Sejam bem vindos a sua enciclopédia Pokémon! Aonde você poderá ver tudo o qu
 Aqui teremos um site com uma listagem de 10 pokémons iniciais, aonde ao clicarmos em simples botão, teremos uma adição de mais 10 pokémons e cada vez que clicarmos nesse botão, serão sempre adicionados cada vez mais pokémons de 10 em 10.
 Não só isso tudo, ainda ao clicarmos na imagem ou nome do pokémon, entraremos nos detalhes do monstrinho, aonde teremos informações como os movimentos (golpes) do carinha, as habilidades do cara e o(s) tipo(s) que esse carinha pertence. Ali também teremos um botão que poderemos voltarmos para a nossa pokedéx inicial, top né?
 Ainda como se não bastasse, ainda teremos um botãozinho extra no topo da página, que ao clicarmos nele, poderemos alternar entre um tema escuro, ou voltar para um tema claro novamente.
-Pra finalizar, teremos um filtro logo abaixo do botão do tema que nos permitirá filtramos, em tempo real, o nome de um pokémon para podermos encontrá-lo mais rapidamente, tá ok?
+Pra finalizar, teremos um filtro logo abaixo do botão do tema que nos permitirá filtramos, em tempo real, o tipo de um pokémon para podermos encontrá-lo mais rapidamente, tá ok?
 Então cai pra dentro!
 
 ### Qual é a finalidade do nosso projeto?👨‍🎓
@@ -20,10 +20,16 @@ Aqui, vamos nos divertir para podermos entrar no mundo pokémon de cabeça, apre
 📌***HTML5***
 📌***CCS3***
 📌***JAVASCRIPT***
-📌**REACT**
 📌**VITE**
 📌**VITEST**
+📌**REACT**
+📌**REACT-ROUTER-DOM**
 📌**BABEL**
+📌**CONTEXT API**
+📌**AXIOS API**
+📌**SPA**
+📌**STYLED-COMPONENTS**
+
 
 ### Como fazer para clonar o projeto e abrir ele?🕵️‍♂️
 1- Primeiramente vamos clonar os monstrinhos:

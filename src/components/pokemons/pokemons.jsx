@@ -9,7 +9,15 @@ import { useContext } from "react";
 
 export async function fetchPokemons(offset = 1, limit = 10) {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`)
-    return response.data
+    const pokemonPromises = response.data.results.map(async pokemon => {
+        const details = await axios.get(pokemon.url)
+        return {
+            name: pokemon.name,
+            url: pokemon.url,
+            types: details.data.types.map(typeInfo => typeInfo.type.name)
+        }
+    })
+    return Promise.all(pokemonPromises)
 }
 
 export const PokemonList = ({ pokemonSearch }) => {
@@ -19,7 +27,7 @@ export const PokemonList = ({ pokemonSearch }) => {
     useEffect(() => {
         async function pokemonData() {
             const pokesData = await fetchPokemons(offset)
-            setPokes(prevPokes => [...prevPokes, ...pokesData.results])
+            setPokes(prevPokes => [...prevPokes, ...pokesData])
         }
 
         pokemonData()
@@ -31,7 +39,7 @@ export const PokemonList = ({ pokemonSearch }) => {
 
     const { theme } = useContext(ThemeContext)
 
-    const filteredPokes = pokes.filter(poke => poke.name.toLowerCase().includes(pokemonSearch))
+    const filteredPokes = pokemonSearch ? pokes.filter(poke => poke.types.some(type => type.toLowerCase().includes(pokemonSearch))) : pokes;
 
     return (
         <>
