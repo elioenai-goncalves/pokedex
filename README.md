@@ -64,8 +64,8 @@ Com o nosso projeto aqui, pude ver como precisamos ter bastante atenção nos m�
 Pude apreender ainda mais com os meus erros e conhecer mais tecnologias e códigos novos.
 
 ### Quais foram realmente as dificuldades que obtive ao fazer esse projeto?🤯
-Realmente esse projeto, apesar de parecer simples, foi totalmente desafiador para mim. Inicialmente fiquei um pouco frustado em não estar conseguindo concluir o projeto sem ter que rever meus estudos e conhecer novos códigos e tecnologias.
-Tive problemas de compatibilidade nos testes unitários, pois inicialmente estava utilizando um teste com "Jest", porém não estava compatível com a minha versão do "Vite", então tive que migrar o teste para o "Vitest", que foi indiciado inclusive pelos meus monitores do meu curso, no nosso forúm de dúvidas internas. Ai sim consegui finalizar a execução de testes com sucesso.
+Realmente esse projeto, apesar de parecer simples, foi totalmente desafiador para mim. Inicialmente fiquei um pouco frustrado em não estar conseguindo concluir o projeto sem ter que rever meus estudos e conhecer novos códigos e tecnologias.
+Tive problemas de compatibilidade nos testes unitários, pois inicialmente estava utilizando um teste com "Jest", porém não estava compatível com a minha versão do "Vite", então tive que migrar o teste para o "Vitest", que foi indiciado inclusive pelos meus monitores do meu curso, no nosso fórum de dúvidas internas. Ai sim consegui finalizar a execução de testes com sucesso.
 Tive que utilizar o "Babel" também para compilar as páginas, pois não estavam sendo renderizadas corretamente nos navegadores por algum motivo, provavelmente compatibilidade de versões também, mas no final deu tudo certo.
 
 ENTÃO É ISSO PESSOAL! ENTREM, CURTAM, DIVIRTAM-SE COM O SITE E APRENDAM MAIS E MAIS DESSES NOSSOS MONSTRINHOS, POIS AFINAL, "TEMOS QUE PEGAR!"
