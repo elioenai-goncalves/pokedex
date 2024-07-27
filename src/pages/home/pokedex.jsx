@@ -23,7 +23,7 @@ export const Pokedex = () => {
     }
 
     return (
-        <div style={{ color: theme.color, background: theme.background }}>
+        <div style={{ color: theme.color, background: theme.background, paddingBottom: '20px' }}>
                 <StyledSelect theme={theme} name="pokemonSearch" onChange={handleSearchChange} value={pokemonSearch}>
                     <option value="">Procure o tipo do Pokémon aqui:</option>
                     {pokemonTypes.map((type) => (

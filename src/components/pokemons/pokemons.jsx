@@ -50,18 +50,17 @@ export const PokemonList = ({ pokemonSearch }) => {
 
                         return (
                             <div key={index} style={{padding: 20}}>
-                                <Link to={`./pokemon/${id}`}>
+                                <StyledLink to={`./pokemon/${id}`} theme={theme}>
                                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} alt={poke.name} />
                                     <h2>{poke.name}</h2>
-                                </Link>
+                                </StyledLink>
                             </div>
                         )
                     })
                     }
-
-                    <button onClick={addPokemon} style={{color: theme.color, background: theme.background, maxHeight: 100, borderWidth: 5, padding: '0 10px'}}>Carregar mais...</button>
                 </StyledHeader>
             </section>
+            <button onClick={addPokemon} style={{color: theme.color, background: theme.background, maxHeight: 100, borderWidth: 5, padding: '0px 10px'}}>Carregar mais...</button>
         </>
     )
 }
@@ -73,3 +72,17 @@ const StyledHeader = styled.div`
     align-items: center;
 `
 
+const StyledLink = styled(Link)`
+    &:visited {
+        color: ${({ theme }) => theme.color};
+    }
+
+    &:hover {
+        transition: ease-in-out 0.3s;
+        font-size: 20px;
+    }
+
+    &:active {
+        color: ;
+    }
+`
