@@ -80,9 +80,10 @@ const StyledLink = styled(Link)`
     &:hover {
         transition: ease-in-out 0.3s;
         font-size: 20px;
+        color: darkblue;
     }
 
     &:active {
-        color: ;
+        color: red;
     }
 `
