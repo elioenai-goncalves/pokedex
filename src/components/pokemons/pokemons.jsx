@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -65,6 +66,10 @@ export const PokemonList = ({ pokemonSearch }) => {
     )
 }
 
+PokemonList.propTypes = {
+    pokemonSearch: PropTypes.string,
+};
+
 const StyledHeader = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +78,8 @@ const StyledHeader = styled.div`
 `
 
 const StyledLink = styled(Link)`
+    text-align: center;
+
     &:visited {
         color: ${({ theme }) => theme.color};
     }
@@ -81,6 +88,11 @@ const StyledLink = styled(Link)`
         transition: ease-in-out 0.3s;
         font-size: 20px;
         color: darkblue;
+
+        img {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out; 
+        }
     }
 
     &:active {
