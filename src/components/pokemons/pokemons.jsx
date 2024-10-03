@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ThemeContext } from "../../contexts/theme-context";
+import { ThemeContext, themes } from "../../contexts/theme-context";
 import { useContext } from "react";
 
 
@@ -81,7 +81,7 @@ const StyledLink = styled(Link)`
     text-align: center;
 
     &:visited {
-        color: ${({ theme }) => theme.color} !important;
+        color: ${({ theme }) => theme === themes.light ? 'purple' : theme.color};
     }
 
     &:hover {
