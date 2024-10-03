@@ -81,7 +81,7 @@ const StyledLink = styled(Link)`
     text-align: center;
 
     &:visited {
-        color: ${({ theme }) => theme.color};
+        color: ${({ theme }) => theme.color} !important;
     }
 
     &:hover {
